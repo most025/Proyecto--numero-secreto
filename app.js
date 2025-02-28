@@ -14,7 +14,7 @@ function VerificarIntento() {
   if (numeroDeUsuario === numeroSecreto) {
     AsignarElementos(
       "p",
-      `lo lograste has ganado en ${intentos} ${
+      `Lo lograste has ganado en ${intentos} ${
         intentos === 1 ? "intento" : "intentos"
       }`
     );
@@ -30,8 +30,6 @@ function VerificarIntento() {
 }
 function generarNumeroAleatorio() {
   let numeroGenerado = Math.floor(Math.random() * numeroMaximo) + 1;
-  console.log(numeroGenerado);
-  console.log(numerosSorteados);
   if(numerosSorteados.length === numeroMaximo){
     AsignarElementos("p","Ya se sortearon todos los numeros");
   }else{
