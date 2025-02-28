@@ -18,7 +18,7 @@ function VerificarIntento() {
         intentos === 1 ? "intento" : "intentos"
       }`
     );
-    document.getElementById("reiniciar").removeAttribute("disabled"); // Este DOM permite reover el disabled (desabilitar) deel botón 'Nuevo Jurgo'
+    document.getElementById("reiniciar").removeAttribute("disabled"); // Este DOM permite remover el disabled (desabilitar) del botón 'Nuevo Juego'
   } else if (numeroDeUsuario > numeroSecreto) {
     AsignarElementos("p", "El número es menor");
   } else {
