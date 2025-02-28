@@ -31,9 +31,11 @@ function VerificarIntento() {
 function generarNumeroAleatorio() {
   let numeroGenerado = Math.floor(Math.random() * numeroMaximo) + 1;
   if(numerosSorteados.length === numeroMaximo){
-    AsignarElementos("p","Ya se sortearon todos los numeros");
+    // Salida de la  recursividad de la función.
+    AsignarElementos("p","Ya se sortearon todos los números");
   }else{
   if (numerosSorteados.includes(numeroGenerado)) {
+    // Recursividad en la función.
     return generarNumeroAleatorio();
   } else {
     numerosSorteados.push(numeroGenerado);
@@ -47,7 +49,7 @@ function limpiarCampo() {
 }
 
 function condicionesIniciales() {
-  AsignarElementos("h1", "Juego del numero secreto");
+  AsignarElementos("h1", "Juego del número secreto");
   AsignarElementos("p", `Ingrese un valor entre 1 y ${numeroMaximo}`);
   numeroSecreto = generarNumeroAleatorio();
   intentos = 1;
