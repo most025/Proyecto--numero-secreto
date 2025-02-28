@@ -18,11 +18,11 @@ function VerificarIntento() {
         intentos === 1 ? "intento" : "intentos"
       }`
     );
-    document.getElementById("reiniciar").removeAttribute("disabled");
+    document.getElementById("reiniciar").removeAttribute("disabled"); // Este DOM permite reover el disabled (desabilitar) deel botón 'Nuevo Jurgo'
   } else if (numeroDeUsuario > numeroSecreto) {
-    AsignarElementos("p", "el numero es menor");
+    AsignarElementos("p", "El número es menor");
   } else {
-    AsignarElementos("p", "el numero es mayor");
+    AsignarElementos("p", "El número es mayor");
   }
   intentos++;
   limpiarCampo();
