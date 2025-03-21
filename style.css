@@ -1,12 +1,20 @@
+:root{
+    --color-de-texto: #E9E7D9;
+    --gradiente-body:  linear-gradient(#a30e2b 0%, #730607 33.33%, #bf012c 66.67%, #640d09 100%);
+    /* --gradiente-body:  linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%); */
+    --color-border: 1px solid #64090c;
+    --color-boton: #87281b;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--color-de-texto);
 }
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    background: var(--gradiente-body);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -33,7 +41,7 @@ body::before {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
-    border: 1px solid #1875E8;
+    border: var(--color-border);
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
@@ -55,7 +63,7 @@ body::before {
 
 .container__boton {
     border-radius: 16px;
-    background: #1875E8;
+    background: var(--color-boton);
     padding: 16px 24px;
     width: 100%;
     font-size: 24px;
